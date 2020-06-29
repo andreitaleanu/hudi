@@ -32,7 +32,7 @@ import java.util.List;
  * To run this as a standalone test in the IDE or command line. First bring up the demo setup using
  * `docker/setup_demo.sh` and then run the test class as you would do normally.
  */
-public class ITTestHoodieDemo extends ITTestBase {
+public class ITTestHoodieDemo extends org.apache.hudi.integ.ITTestBase {
 
   private static final String HDFS_DATA_DIR = "/usr/hive/data/input";
   private static final String HDFS_BATCH_PATH1 = HDFS_DATA_DIR + "/batch_1.json";

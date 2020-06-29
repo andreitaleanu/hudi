@@ -31,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Smoke tests to run as part of verification.
  */
-public class ITTestHoodieSanity extends ITTestBase {
+public class ITTestHoodieSanity extends org.apache.hudi.integ.ITTestBase {
 
   enum PartitionType {
     SINGLE_KEY_PARTITIONED, MULTI_KEYS_PARTITIONED, NON_PARTITIONED,
