@@ -102,6 +102,10 @@
                   <shadedPattern>org.apache.hudi.com.beust.jcommander.</shadedPattern>
                 </relocation>
                 <relocation>
+                  <pattern>org.eclipse.jetty</pattern>
+                  <shadedPattern>org.shaded.jetty</shadedPattern>
+                </relocation>
+                <relocation>
                   <pattern>org.apache.hive.jdbc.</pattern>
                   <shadedPattern>${spark.bundle.hive.shade.prefix}org.apache.hive.jdbc.</shadedPattern>
                 </relocation>
