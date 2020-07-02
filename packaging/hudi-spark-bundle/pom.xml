@@ -70,6 +70,8 @@
                   <include>org.apache.hudi:hudi-hive</include>
                   <include>org.apache.hudi:hudi-hadoop-mr</include>
                   <include>org.apache.hudi:hudi-timeline-service</include>
+                  <include>org.apache.hadoop:hadoop-azure</include>
+                  <include>com.rentpath:hadoop-azure-datalake</include>
 
                   <include>com.beust:jcommander</include>
                   <include>io.javalin:javalin</include>
@@ -189,6 +191,19 @@
   </build>
 
   <dependencies>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-azure</artifactId>
+      <version>${hadoop.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.rentpath</groupId>
+      <artifactId>hadoop-azure-datalake</artifactId>
+      <version>2.7.3-0.1.0</version>
+      <scope>compile</scope>
+    </dependency>
+
     <!-- Hoodie -->
     <dependency>
       <groupId>org.apache.hudi</groupId>
